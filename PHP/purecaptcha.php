@@ -19,18 +19,18 @@ class PureCaptcha
      * A compressed 13*6*len(chars) table of 0s and 1s for rendering ASCII text
      * @var string
      */
-    protected $ascii="eJztm0tuwzAMRK8U+ZOPc5ose4Yidy/ayEUkUGOOKle0rUWgLPrAWp6hS
-	NN5TJ2bPj+m0/0xuX7+dn59eX2cXzu/9n4d/Dr+rM/vP8wlu3fSvX06v/Z+Hfz6S/YopkMxh2xy
-	zCbP2eQlm7xmk7ds0kERYTRfRa7LRL12d6f/OGZAQv2fophr6j91nXr9w+uE+ofkTborKlLWv+p
-	CK+m/a/ovo39IFs7/7q7YW1H/KpLSP8j/1A2tpP++6X97+leRhfRPkTj/Y7SO/oft6D8geyZHpf
-	VPkWM2ec6+zguKqdd/6r8VY5aqfzi0jv7Hpv/t6h/urUr/y/m/QP2jQ+vo/7wH/Z8iUq9/ihTrH
-	xVZuP9VxaTqn4Ck6h9F/lddaCX9X5r+a+sfkk3/6+r/ak//KTLYabH+4fVPkbD+cYgU6x8Vqap/
-	nERS9X9a/9Rd2V79f9uT/lWkqv4XUxSl/4CE9T/codb/rjz/MjgAtmAA/gCAJNUA8weAGJNqgA9
-	7ADiDE+CjGCCVx/UGgCQ0ACRFA8TnlWjXDRrA4Aj4Pw3wTueNwFTkyiNgMaaqBW4lkMEZcDPAkg
-	FUZHsHTmUAg0NgFUkZICCpEihtAIqEJRAk9zAEm3PEbAC5eqpkAENT4DinxvuVbwBbPcDSdaZ7g
-	KW9TfcAFHmkt0CdoTFwM8BfT4C0ASjyUAYwNAfelgGonAp7gJlcNkBM8j1A3LGI5KFKIEODYIsG
-	CGIW7gHaCXA3YABDk2Aqv6neBBJ3unoJRJGiAVQptb4BOLTSL8EMTYJT5PIJQJGqnwKLZOHHoCq
-	SehUoIEUDqKwDH4PCmPgxKEZrGOD5BRevL54=";
+    protected $ascii="eJztmltugzAQRbeUAUIIWU0+u4Yqe6/aOFKMhstc4+Ch+KMiHz1CmDMPM
+	76PjYzfX+Ppdh+lff3qnz+efxKuTbi24dqF6/nv+vj9x1Sy0UgJpARSNLJ9J2XhnvJOdsnkmXnO
+	iOwtpPqcF0TKDaztgNYWvpUrs0KxCScNnXuh0RJJukWiamRAg7tO/KeWq012sUt2EfoPXVT9N8U
+	59B8+p+q/iaT8jyVWJTI9aCH/Gz/+Uy6a/FdJ6D98Rar/04yqktB/e/6fc1Elh+Tcck1eW91/G1
+	rG/9af/576n3n/KbJnXOT9X87/FHmk/N/58X/f/Q+f/6c1R12h4v0/RWL/MVrG/7Mf/z3m/4ik8
+	n9EZur/a/7P7n9f/ffmf0TW/e9n/b/48/9Fwuqu9j/TQqsudHH/KVLN/6bIKZ//ObSM/4Mf/5fe
+	Lu//cv6nSNP3n/X5P3pONf+b7kn1//P+UyT3/d9D/r9W/0v7b8//1f/s/oujATBVL3e8AaDamD1
+	vgPfQAInDCbCHAFCTFAwAuYHnhAEAVwgGALynKQDU5zxUADgaAS+tV0RSARCRbkZgJpKqAHwAqO
+	ShjgA5mgGvrwD8HoAiqQqw3AKZSOoMBN8CqeShKsCOhsDpFYBvgfgAgORGhyCcVgAbWigAHE2Ba
+	wDUPcD2AeBoDEy1jPAYEBTDdAxUJTMfgzaRmY8BmUh4DBSS+BgoRgsFgKM5MJUw/kEFmPPCvgeA
+	JKwAkFQrwCstTWvH3iuAw0HwlgHwTnOfQSkycwUw3dM0CKstkMNJcA2A2gJtFgCNw0nw+j0AHwB
+	T0h4AJvLDFcAeACbyOHOAxw/+3S+e";
 
     function __construct()
     {
