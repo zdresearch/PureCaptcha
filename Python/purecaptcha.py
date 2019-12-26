@@ -7,7 +7,7 @@ import sys
 Python version
 
 Generates simple CAPTCHAs without any dependencies.
-@version: 1.2
+@version: 1.3
 @author: abiusx
 """
 class PureCaptcha:
@@ -22,14 +22,6 @@ class PureCaptcha:
         t=''.join(format(ord(_), 'b').zfill(8) for _ in t.decode("base64"))
         self.ascii=[[[ int(t[i*13*6+y*6+x]) for x in range(0,6)]
             for y in range(0,13)] for i in range(0,21)];
-        # print self.ascii
-        # for i in range(0,21):
-        #     print i
-        #     for y in range(0,13):
-        #         for x in range(0,6):
-        #             print ("." if self.ascii[i][y][x]==0 else "#"),
-        #         print
-        #     print "-"*20
 
     def randomText(self, length=4):
         res = "";
@@ -139,9 +131,10 @@ class PureCaptcha:
 
     def distort(self, bitmap, noisePercentage):
         (width, height) = self.bitmapDimensions(bitmap);
+        noisePercentage/=100;
         for j in range(0,height):
             for i in range(0,width):
-                if (random.randint(0,100) < noisePercentage):
+                if random.random() < noisePercentage:
                     bitmap[j][i]=1;
         return bitmap;
 
@@ -149,8 +142,9 @@ class PureCaptcha:
         bitmap=[None]*len(text);
         for (i,char) in enumerate(text):
             bitmap[i] = self.ascii[self.chars.find(char)];
-            degree = random.randint(rotationDegrees[0],rotationDegrees[1]);
-            if random.randint(0,1):
+            degree = int(random.random()*
+                (rotationDegrees[1]-rotationDegrees[0]+1))+rotationDegrees[0];
+            if int(random.random()*2):
                 degree = -degree;
             bitmap[i] = self.scaleBy(bitmap[i],5,5); # More clear letters.
             bitmap[i] = self.rotateBitmap(bitmap[i], degree);
